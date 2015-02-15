@@ -4,7 +4,7 @@ title: "我的第一篇"
 permalink: my-first-test
 ---
 
-This is updated exerpt text. 
+This is updated exerpt text! 
 
 ## This is first title
 
