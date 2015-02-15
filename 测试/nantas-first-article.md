@@ -5,6 +5,7 @@ permalink: my-first-test
 ---
 
 This is updated exerpt text! 
+exerpt continues...
 
 ## This is first title
 
