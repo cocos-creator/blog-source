@@ -1,7 +1,7 @@
 ---
 author: nantas
 title: "Fireball Beta Roadmap"
-permalink: /blog/releases/beta-roadmap
+permalink: /blogs/releases/beta-roadmap
 ---
 
 ## Fireball 0.4 (2015.05)
