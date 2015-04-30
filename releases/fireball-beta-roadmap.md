@@ -1,7 +1,8 @@
 ---
 author: nantas
-title: "Fireball Beta Roadmap"
+title: Fireball Beta Roadmap
 permalink: beta-roadmap
+date: 2015-04-30
 --- 
 
 ## Fireball 0.4 (2015.05)
