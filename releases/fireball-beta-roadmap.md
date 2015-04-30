@@ -5,6 +5,14 @@ permalink: beta-roadmap
 date: 2015-04-30
 --- 
 
+Fireball 在2015年会有很多激动人心的新功能和特性加入，我们会把一款体验优秀的跨平台 Html5 游戏编辑器逐步完善成为兼容各种开源引擎，并可以按照开发者的意愿自由定制的面向未来的全功能游戏开发工具。这里我们列出了到2015年夏天为止的版本更新计划和新功能详细描述，希望能够收到大家的反馈。
+
+- QQ群：246239860
+- 社区论坛：http://forum.fireball-x.com
+- 本 Roadmap 在 Github 上的 issue 讨论：https://github.com/fireball-x/fireball/issues/3
+
+This is a roadmap with detailed feature description in the upcoming releases in summer 2015. We will be publishing roadmap for late 2015 in the future. Questions and feedbacks are welcome as comment to this issue. :smiley:
+
 ## Fireball 0.4 (2015.05)
 
 ### 完成并稳定 cocos2d-js 整合
