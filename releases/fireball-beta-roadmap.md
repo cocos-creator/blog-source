@@ -11,7 +11,7 @@ Fireball 在2015年会有很多激动人心的新功能和特性加入，我们�
 - [社区论坛](http://forum.fireball-x.com)
 - [本 Roadmap 在 Github 上的 issue 讨论](https://github.com/fireball-x/fireball/issues/3)
 
-## Fireball 0.4 (2015.05)
+## Fireball 0.4 (2015.05) **已发布**
 
 ### 完成并稳定 cocos2d-js 整合
 
@@ -29,7 +29,9 @@ Fireball 在2015年会有很多激动人心的新功能和特性加入，我们�
 
 以及能够展示和编辑 Animation Clip 的动画编辑器。（类似于 Unity 的 Animation 编辑窗口）包括新增曲线控制点，操作节点控制手柄，添加动画事件等功能。
 
-## Fireball 0.5 (Beta公测版，2015.06)
+### Sliced Sprite 九宫格 Sprite
+
+九宫格 Sprite 多用于 UI 制作，能够以一个尺寸很小的图片生成可自由缩放的面板或背景 Sprite。生成 Sliced Sprite 后通过 Inspector 就可以编辑九宫格切分的参数和看到预览效果。
 
 ### Particle  组件
 
@@ -37,26 +39,15 @@ Particle 组件是通过 Cocos2D-JS 的粒子系统实现的在场景中配置�
 
 未来版本中会加入专门的 Particle Asset 和 Particle Editor。
 
-### Prefab 预制物体
-
-类似 Unity 的 Prefab 概念，用户可以将装载和配置好组件的 Entity 保存为 Prefab，然后在程序中动态实例化。相比于 Unity 的 Prefab，我们改进了以下功能：
-
-- Hierarchy 中将只能看到 Prefab 的 root 节点，Prefab 包含的子物体默认不会显示在 Hierarchy 中。
-- 点击 Prefab 属性中的`edit`按钮，会进入 Prefab 编辑模式。这个时候会正常显示 Prefab 下面的 Entity 结构，而场景中无关的 Entity 会变暗且不能编辑。编辑模式下可以像操作正常 Entity 一样任意修改 Prefab 下的结构和组件。
-- Prefab 子节点组件里的属性旁边会加入`expose`按钮，点击就可以将该属性暴露到 Prefab root 节点上，方便用户在不进入编辑模式的情况下就可以修改某些常用属性。
-- Prefab 子节点 Entity 可以设置为`anchor`模式，这样在 Hierarchy 中就会可以看到这个子节点，方便用户在子节点上挂载武器、特效等动态物件。
-
-### TexurePacker 数据导入
-
-TexturePacker 是目前手游开发行业中最流行的图集编辑工具，Fireball 将可以直接导入 TexturePacker 生成的图集数据，并在游戏中享受批量渲染带来的性能提升。
-
-### Sliced Sprite 九宫格 Sprite
-
-九宫格 Sprite 多用于 UI 制作，能够以一个尺寸很小的图片生成可自由缩放的面板或背景 Sprite。生成 Sliced Sprite 后通过 Inspector 就可以编辑九宫格切分的参数和看到预览效果。
-
-## Fireball 0.6 (2015.07)
+## Fireball 0.5 (Beta公测版，2015.07)
 
 这个版本将会对 Fireball 进行一次重构和升级, 这其中包括:
+
+### Fireball 将全面支持 Cocos2D-JS 的API
+
+本次升级后，我们将使用 mixin 的方式将 entity-component 合并，用户可以在原有 Cocos2D-JS 脚本的基础上增加面向 Inspector 的属性声明，实现场景编辑器中的场景组装和组件功能添加。对于开发者来说，本次升级以后就可以完全使用原来习惯的引擎 API，并根据内容生产的需要随时扩展可编辑属性到场景编辑器中，学习上手成本大大降低。
+
+在下面几个版本中我们会继续接入 Pixi、Egret、Phaser 等流行的开源引擎，这些引擎的用户都可以使用原引擎的 API 来制作游戏。
 
 ### 将 Fireball 底层 UI 框架从 Polymer 0.5 升级到 Polymer 0.8. 
 
@@ -73,6 +64,22 @@ Engine-Framework 是一套 Entity-Component 系统. 他提供了一个 Entity-Co
 ### 升级 Fireball AssetDatabase
 
 我们将全面重写 Fireball 的 Asset Database, 采用新的 Async 导入导出流程. 新的 Asset Database 将允许用户注册自己的资源 Meta 和导入导出规则, 并可以被 CLI 所使用.
+
+
+## Fireball 0.6 (2015.08)
+
+### Prefab 预制物体
+
+类似 Unity 的 Prefab 概念，用户可以将装载和配置好组件的 Entity 保存为 Prefab，然后在程序中动态实例化。相比于 Unity 的 Prefab，我们改进了以下功能：
+
+- Hierarchy 中将只能看到 Prefab 的 root 节点，Prefab 包含的子物体默认不会显示在 Hierarchy 中。
+- 点击 Prefab 属性中的`edit`按钮，会进入 Prefab 编辑模式。这个时候会正常显示 Prefab 下面的 Entity 结构，而场景中无关的 Entity 会变暗且不能编辑。编辑模式下可以像操作正常 Entity 一样任意修改 Prefab 下的结构和组件。
+- Prefab 子节点组件里的属性旁边会加入`expose`按钮，点击就可以将该属性暴露到 Prefab root 节点上，方便用户在不进入编辑模式的情况下就可以修改某些常用属性。
+- Prefab 子节点 Entity 可以设置为`anchor`模式，这样在 Hierarchy 中就会可以看到这个子节点，方便用户在子节点上挂载武器、特效等动态物件。
+
+### TexurePacker 数据导入
+
+TexturePacker 是目前手游开发行业中最流行的图集编辑工具，Fireball 将可以直接导入 TexturePacker 生成的图集数据，并在游戏中享受批量渲染带来的性能提升。
 
 
 ## 未来版本功能
